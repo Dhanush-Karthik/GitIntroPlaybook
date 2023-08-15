@@ -4,13 +4,37 @@ Git is a distributed version control system (VCS) designed to manage changes in 
 To make the learning fun I have included link for Git visualiser where one can visualise how git works. Feel free to make use of it. 
 `https://git-school.github.io/visualizing-git/`
 
+## How git is organized
+
+Git organizes the version control process using the following three components.
+
+1. Working Directory
+2. Index or Staging
+3. Repository
+
+These components work together to manage changes, track history, and facilitate collaboration.
+
+## Working Directory
+
+In Git, the working directory, also known as the working tree, refers to the directory on your local machine where you have all your project files. It's the place where you create, modify, and organize your code and other project-related files. The working directory is where you actively work on your project, making changes, adding new files, and editing existing ones.
+
+## Staging
+
+The index, or staging area, is an intermediate step between the working directory and the repository. It's a snapshot of the changes you plan to include in your next commit. 
+
+Let us consider an anology,
+
+Imagine you're a chef cooking a delicious meal. You have all your ingredients in your kitchen (your working directory), and you want to put together a new recipe (make changes to your project files). Now, before you serve the meal (commit your changes), you need to prepare everything nicely and ensure it tastes great.
+
+In Git, staging is like setting up your kitchen counter. It's where you place all the ingredients you're planning to use for your recipe. But just because the ingredients are on the counter doesn't mean you've already cooked them together. Similarly, when you stage changes in Git, you're not yet committing them to your project history, but you're getting ready to.
+
 ## Repository
 
 In Git, a repository, often referred to as a "repo," is a data structure that holds and manages the collection of files, directories, and their version history. A repository contains all the information necessary to track changes to files and collaborate with other developers on a project. It serves as the core component of version control, enabling you to keep track of changes, collaborate with others, and manage the evolution of your project over time.
 
 1. **Local Repository:**
     A local repository is the repository that resides on your local machine. It contains the complete history of changes, all the branches, tags, and configuration specific to your machine.
-1. Remote Repository:
+1. **Remote Repository:**
     A remote repository is hosted on a remote server, often on platforms like GitHub, GitLab, or Bitbucket. Remote repositories provide a central location for collaboration, allowing multiple developers to work on the same project. Changes made to the remote repository can be fetched, pushed, and pulled to and from your local repository.
 
 ## Setting up git repository
@@ -28,7 +52,7 @@ To initialize a new repository, you'll use the following steps.
 Before you can push changes to a remote repository, you need to have a remote repository set up on a platform like GitHub, GitLab, or Bitbucket. You would typically create a remote repository through the web interface of the platform.
 If you used git init to make a fresh repo, you'll have no remote repo to push changes to. This can be done by the following command.
 
-1. Initialise git in local:
+2. Initialise git in local:
 
 To initialise git in local system, use the following command:
 
@@ -36,7 +60,7 @@ To initialise git in local system, use the following command:
 git init
 ```
 
-1. Link the Remote Repository:
+3. Link the Remote Repository:
 
 After creating the remote repository and initialising the git in local, you need to establish a connection between your local repository and the remote repository. This is done by adding a remote reference. You can do this using the following command:
 
