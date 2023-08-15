@@ -1,7 +1,4 @@
-# Git-Basics
-Basic commands and concepts of Git
-
-## Git
+# Git
 Git is a distributed version control system (VCS) designed to manage changes in source code during software development. It allows multiple developers to work on the same codebase simultaneously while keeping track of changes, facilitating collaboration, and providing a history of the project's evolution.
 
 ## Repository
