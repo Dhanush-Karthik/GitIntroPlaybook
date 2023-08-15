@@ -1,6 +1,9 @@
 # Git
 Git is a distributed version control system (VCS) designed to manage changes in source code during software development. It allows multiple developers to work on the same codebase simultaneously while keeping track of changes, facilitating collaboration, and providing a history of the project's evolution.
 
+To make the learning fun I have included link for Git visualiser where one can visualise how git works. Feel free to make use of it. 
+`https://git-school.github.io/visualizing-git/`
+
 ## Repository
 
 In Git, a repository, often referred to as a "repo," is a data structure that holds and manages the collection of files, directories, and their version history. A repository contains all the information necessary to track changes to files and collaborate with other developers on a project. It serves as the core component of version control, enabling you to keep track of changes, collaborate with others, and manage the evolution of your project over time.
@@ -58,6 +61,20 @@ git clone <Https/SSH repository link>
 ```
 
 `git clone` will automatically configure your repo with a remote pointed to the Git URL you cloned it from. This means that once you make changes to a file and commit them, you can git push those changes to the remote repository.
+
+## git clone vs git init
+
+`git init` and `git clone` can be easily confused. At a high level, they can both be used to "initialize a new git repository." However, `git clone` is dependent on `git init`. `git clone` is used to create a copy of an existing repository. Internally, `git clone` first calls `git init` to create a new repository. It then copies the data from the existing repository, and checks out a new set of working files.
+
+## Bare repository
+
+A bare repository is a special type of repository that does not have a working directory. It only contains the version history, branches, tags, and other Git-specific information, making it ideal for use as a remote repository that multiple developers can push and pull from.
+
+To create a bare repository you can use the command:
+
+`git init --bare <repository_name>.git`
+
+Bare repositories are often used as centralized remote repositories in team environments where collaboration is essential. Developers can push their changes to a bare repository, and other team members can pull those changes from the same repository. They are best suited for serving as shared remote repositories that multiple developers interact with.
 
 ## Git Basic flow
 
@@ -262,3 +279,45 @@ Once all changes are done. The code is pushed to the remote repository using the
 ```
 git push origin main
 ```
+
+
+## Git Structure
+
+The structure of a Git repository includes various components that work together to manage and track changes in your project's files. Here's an overview of the key elements in a Git repository's structure. The three main structure of git are
+
+1. Working directory
+1. Index(Staging Area)
+1. HEAD
+
+1. Working Directory:
+
+The working directory is the directory on your local machine where you have all your project files. It's the place where you edit, modify, and create new files as you work on your project. These changes are initially separate from the version control system. When you make changes to files in the working directory, Git doesn't automatically track those changes. Instead, you need to explicitly tell Git which changes to include in the next commit. The working directory is also sometimes referred to as the "working tree."
+
+1. Index (Staging Area):
+
+The index, also known as the staging area, is an intermediate step between the working directory and the repository. It's a place where you assemble and organize changes before you commit them to the version history. When you use the `git add` command, you're actually moving changes from the working directory to the index. This allows you to selectively choose which changes you want to include in your next commit. The index acts as a snapshot of what your next commit will look like. Once you've staged your changes in the index, you can use the `git commit` command to create a new commit that captures those staged changes.
+
+1. HEAD:
+
+HEAD is a special pointer/reference in Git that points to the latest commit in the currently checked-out branch.When you commit changes, the branch pointer moves forward to point to the new commit, and HEAD updates to point to the latest commit on that branch. This means that HEAD is always pointing to the tip of the current branch.
+
+> **_NOTE:_**  HEAD does not points directly to the commit itself. Instead it points to the branch name where the recent commit has taken place.
+
+```
+git checkout <branch-name>
+```
+
+1. Detached HEAD:
+
+Detached HEAD is a state in Git where the HEAD reference points directly to a specific commit rather than to a named branch. This can happen when you checkout a commit directly using its hash or through other means that don't involve checking out a branch.
+
+```
+git checkout <commit-hash>
+```
+
+One can get the `commit-hash` from the `git log` command.
+
+
+When you make changes and commits in a detached HEAD state, those changes are captured just like regular commits. However, because you're not on a named branch, there's no branch reference pointing to these commits, which means they're not as easily accessible or part of the main project timeline. This is why it's important to handle detached HEAD commits properly to avoid losing your work.
+
+To keep track of the commits made on the detached HEAD, a new branch is created using the command `git branch <branch-name>`
