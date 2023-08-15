@@ -182,3 +182,12 @@ git merge future-plans
 After Merging your branch your repository looks like:
 
 ![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A72ab245a-391a-4aba-b6a5-741a10c2518b/07%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
+
+
+### Deleting a branch
+
+Once there is no more use of a branch. it can be deleted by using the command:
+
+```
+git branch -d future-plans
+```
