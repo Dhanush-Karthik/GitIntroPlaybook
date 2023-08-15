@@ -5,7 +5,7 @@ Git is a distributed version control system (VCS) designed to manage changes in 
 
 In Git, a repository, often referred to as a "repo," is a data structure that holds and manages the collection of files, directories, and their version history. A repository contains all the information necessary to track changes to files and collaborate with other developers on a project. It serves as the core component of version control, enabling you to keep track of changes, collaborate with others, and manage the evolution of your project over time.
 
-1. Local Repository:
+1. **Local Repository:**
     A local repository is the repository that resides on your local machine. It contains the complete history of changes, all the branches, tags, and configuration specific to your machine.
 1. Remote Repository:
     A remote repository is hosted on a remote server, often on platforms like GitHub, GitLab, or Bitbucket. Remote repositories provide a central location for collaboration, allowing multiple developers to work on the same project. Changes made to the remote repository can be fetched, pushed, and pulled to and from your local repository.
@@ -17,27 +17,34 @@ There are two ways of setting up the repository.
 
 ## Initialize a git repository
 
-Initializing a repository involves setting up a new Git repository from scratch in a local directory. This is typically done when you're starting a new project or converting an existing project into a Git repository. During the initialization process, Git creates a hidden subdirectory called .git within the project directory. This subdirectory contains all the necessary information for version control, including the commit history, configuration settings, and more.
+Initializing a repository involves setting up a new Git repository from scratch in a local directory. This is typically done when you're starting a new project or converting an existing project into a Git repository. During the initialization process, Git creates a hidden subdirectory called `.git` within the project directory. This subdirectory contains all the necessary information for version control, including the commit history, configuration settings, and more.
 
-To initialize a new repository, you'll use the following command.
+To initialize a new repository, you'll use the following steps.
 
-```
-git init
-```
-Pointing to the existing git repository can be done by adding the repository name to it.
-
-```
-git init <repository name>
-```
 1. Create a Remote Repository:
 Before you can push changes to a remote repository, you need to have a remote repository set up on a platform like GitHub, GitLab, or Bitbucket. You would typically create a remote repository through the web interface of the platform.
 If you used git init to make a fresh repo, you'll have no remote repo to push changes to. This can be done by the following command.
 
+1. Initialise git in local:
+
+To initialise git in local system, use the following command:
+
+```
+git init
+```
+
 1. Link the Remote Repository:
-After creating the remote repository, you need to establish a connection between your local repository and the remote repository. This is done by adding a remote reference. You can do this using the following command:
+
+After creating the remote repository and initialising the git in local, you need to establish a connection between your local repository and the remote repository. This is done by adding a remote reference. You can do this using the following command:
 
 ```
 git remote add <remote_name> <remote_repo_url>
+```
+
+Pointing to the existing git repository can be done by adding the repository name to it.
+
+```
+git init <repository name>
 ```
 
 ## Cloning a git repository
@@ -91,7 +98,9 @@ git add <file name>
 The `git add` command moves changes from the working directory to the Git staging area. The staging area is where you prepare a snapshot of a set of changes before committing them to the official history.
 
 `git add .` adds all the changes to the staging area.
-![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3Adbf0c59f-848d-4814-bfd5-6b190a092963/03.svg?cdnVersion%3D1162)
+
+<img src="https://wac-cdn.atlassian.com/dam/jcr%3Adbf0c59f-848d-4814-bfd5-6b190a092963/03.svg?cdnVersion%3D1162" alt="Alt Text" width="300">
+
 ## Commit changes to git
 
 You can commit the changes to your local repository using the command:
