@@ -14,7 +14,7 @@ Git organizes the version control process using the following three components.
 
 These components work together to manage changes, track history, and facilitate collaboration.
 <p align="center">
-    <img src="https://www.google.com/url?sa%3Di%26url%3Dhttps%3A%2F%2Fgit-scm.com%2Fabout%26psig%3DAOvVaw3uCfH4l61smivthpX5XWCV%26ust%3D1692191983193000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBAQjRxqFwoTCNjUpMLg3oADFQAAAAAdAAAAABAE" alt="Alt Text" width="500">
+    <img src="https://git-scm.com/images/about/index1%402x.png" alt="Alt Text" width="500">
 </p>
 
 ## Working Directory
