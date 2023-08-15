@@ -15,13 +15,17 @@ Between Remote Repository and your local system/repository.
 
 To clone a remote git repository use the following command:
 
-`git clone <Https/SSH repository link>`
+```
+git clone <Https/SSH repository link>
+```
 
 ## Get the status of the local repository
 
 To get the status of the local repository use the following command:
 
-`git status`
+```
+git status
+```
 
 ## Staging area
 
@@ -37,7 +41,9 @@ The staging area, also commonly referred to as the "index," is an intermediate s
 
 To tell git to track your new file use the command:
 
-`git add <file name>`
+```
+git add <file name>
+```
 
 The `git add` command moves changes from the working directory to the Git staging area. The staging area is where you prepare a snapshot of a set of changes before committing them to the official history.
 
@@ -47,7 +53,9 @@ The `git add` command moves changes from the working directory to the Git stagin
 
 You can commit the changes to your local repository using the command:
 
-`git commit -m "your commit message"`
+```
+git commit -m "your commit message"
+```
 
 The git commit takes the staged snapshot and commits it to the project history.
 
@@ -57,7 +65,9 @@ Up until this point, everything you have done is on your local system and invisi
 
 You can push your changes to remote repository using the command:
 
-`git push origin branch_name`
+```
+git push origin branch_name
+```
 
 **origin:** Refers to the remote repository.
 **branch:** Refers to the branch to which you want to push your changes
@@ -66,7 +76,9 @@ You can push your changes to remote repository using the command:
 
 You can pull changes from the remote repository using the command:
 
-`git pull`
+```
+git pull
+```
 
 ## Stash your changes 
 
@@ -80,7 +92,9 @@ Inorder to overcome this error you can either commit your changes or you can sta
 
 To stash your changes use the command:
 
-`git stash`
+```
+git stash
+```
 
 Stashing allows you to save your changes in a hidden area and revert your working directory to a clean state.
 
@@ -88,7 +102,9 @@ Stashing allows you to save your changes in a hidden area and revert your workin
 
 To merge the changes made on your remote repository to your local repository you can use the command:
 
-`git merge`
+```
+git merge
+```
 
 ## Branch your project 
 
@@ -104,13 +120,17 @@ When you initialize a Git repository or clone an existing one, there's usually a
 
 To start working on a new feature or fixing a bug, you create a new branch. This branch will initially be identical to the branch you're branching from (often the default branch). You can create a new branch using the command:
 
-`git branch branch-name`
+```
+git branch branch-name
+```
 
 This command creates a new branch called as **branch-name** from the default branch.
 
 To see the status of the branches available you can use the command:
 
-`git branch`
+```
+git branch
+```
 
 It returns the list of all branches available with the active branch in green color.
 
@@ -118,11 +138,15 @@ It returns the list of all branches available with the active branch in green co
 
 To switch to a different branch, you use the command:
 
-`git checkout branch_name`
+```
+git checkout branch_name
+```
 
 In more recent versions of Git, you can use the following command for switching:
 
-`git switch branch_name`
+```
+git switch branch_name
+```
 
 ### Merge branches
 
@@ -132,7 +156,9 @@ When you're ready to integrate your changes into the `main/master` branch, you c
 
 Make sure you commit the changes made to your `editing` branch using the command:
 
-`git commit -m "changes on sub-branch`
+```
+git commit -m "changes on sub-branch
+```
 
 ```
 git checkout main
