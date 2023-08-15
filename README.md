@@ -110,11 +110,15 @@ git merge
 
 Making changes to your project as seen above is not an efficient way. Updating every thing to the main branch makes difficult to manage and organize the changes. 
 
-In Git, branches are an essential feature that allow you to create separate lines of development within a repository. Each branch represents an independent timeline of changes, making it possible to work on different features, fixes, or experiments without directly affecting the main project until you're ready to merge your changes
+In Git, branches are an essential feature that allow you to create separate lines of development within a repository. Each branch represents an independent timeline of changes, making it possible to work on different features, fixes, or experiments without directly affecting the main project until you're ready to merge your changes.
+
+It's important to understand that branches are just pointers to commits. When you create a branch, all Git needs to do is create a new pointer—it doesn’t create a whole new set of files or folders.
 
 ### Default branch
 
 When you initialize a Git repository or clone an existing one, there's usually a default branch like master or main that serves as the mainline of development. This is where the stable and production-ready code resides.
+
+![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A3b5d663b-0b1c-4321-a32c-0708769e8aeb/04%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
 
 ### Create a new branch
 
@@ -125,6 +129,8 @@ git branch branch-name
 ```
 
 This command creates a new branch called as **branch-name** from the default branch.
+
+![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A36506d0e-5e8e-4ef8-82a5-368597c66efd/05%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
 
 To see the status of the branches available you can use the command:
 
@@ -148,6 +154,18 @@ In more recent versions of Git, you can use the following command for switching:
 git switch branch_name
 ```
 
+### Make changes to the new branch
+
+Make changes to the new branch and commit your changes using the command:
+
+```
+git commit -m "changes on sub-branch"
+```
+
+Now your repository looks like this:
+
+![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A5331fdcb-bfcf-435a-be7e-5b21d75a5531/06%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
+
 ### Merge branches
 
 Consider you created a new branch from `master/main` branch called as `editing` where all your changes goes into.
@@ -157,10 +175,10 @@ When you're ready to integrate your changes into the `main/master` branch, you c
 Make sure you commit the changes made to your `editing` branch using the command:
 
 ```
-git commit -m "changes on sub-branch
-```
-
-```
 git checkout main
 git merge editing
 ```
+
+After Merging your branch your repository looks like:
+
+![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A72ab245a-391a-4aba-b6a5-741a10c2518b/07%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
