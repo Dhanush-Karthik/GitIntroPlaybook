@@ -125,10 +125,10 @@ When you initialize a Git repository or clone an existing one, there's usually a
 To start working on a new feature or fixing a bug, you create a new branch. This branch will initially be identical to the branch you're branching from (often the default branch). You can create a new branch using the command:
 
 ```
-git branch branch-name
+git branch future-plans
 ```
 
-This command creates a new branch called as **branch-name** from the default branch.
+This command creates a new branch called as **future-plans** from the default branch.
 
 ![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A36506d0e-5e8e-4ef8-82a5-368597c66efd/05%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
 
@@ -145,13 +145,13 @@ It returns the list of all branches available with the active branch in green co
 To switch to a different branch, you use the command:
 
 ```
-git checkout branch_name
+git checkout future-plans
 ```
 
 In more recent versions of Git, you can use the following command for switching:
 
 ```
-git switch branch_name
+git switch future-plans
 ```
 
 ### Make changes to the new branch
@@ -168,15 +168,15 @@ Now your repository looks like this:
 
 ### Merge branches
 
-Consider you created a new branch from `master/main` branch called as `editing` where all your changes goes into.
+Consider you created a new branch from `master/main` branch called as `future-plans` where all your changes goes into.
 
-When you're ready to integrate your changes into the `main/master` branch, you can merge the changes from your `editing` branch back into the `main` branch. This combines the changes you made on the feature branch with the code on the main branch. The git merge command is used for this purpose:
+When you're ready to integrate your changes into the `main/master` branch, you can merge the changes from your `future-plans` branch back into the `main` branch. This combines the changes you made on the feature branch with the code on the main branch. The git merge command is used for this purpose:
 
-Make sure you commit the changes made to your `editing` branch using the command:
+Make sure you commit the changes made to your `future-plans` branch using the command:
 
 ```
 git checkout main
-git merge editing
+git merge future-plans
 ```
 
 After Merging your branch your repository looks like:
