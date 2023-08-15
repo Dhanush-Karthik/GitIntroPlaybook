@@ -96,7 +96,7 @@ Making changes to your project as seen above is not an efficient way. Updating e
 
 In Git, branches are an essential feature that allow you to create separate lines of development within a repository. Each branch represents an independent timeline of changes, making it possible to work on different features, fixes, or experiments without directly affecting the main project until you're ready to merge your changes
 
-### Main branch
+### Default branch
 
 When you initialize a Git repository or clone an existing one, there's usually a default branch like master or main that serves as the mainline of development. This is where the stable and production-ready code resides.
 
@@ -123,3 +123,18 @@ To switch to a different branch, you use the command:
 In more recent versions of Git, you can use the following command for switching:
 
 `git switch branch_name`
+
+### Merge branches
+
+Consider you created a new branch from `master/main` branch called as `editing` where all your changes goes into.
+
+When you're ready to integrate your changes into the `main/master` branch, you can merge the changes from your `editing` branch back into the `main` branch. This combines the changes you made on the feature branch with the code on the main branch. The git merge command is used for this purpose:
+
+Make sure you commit the changes made to your `editing` branch using the command:
+
+`git commit -m "changes on sub-branch`
+
+```
+git checkout main
+git merge editing
+```
