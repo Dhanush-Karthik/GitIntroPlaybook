@@ -1,8 +1,9 @@
 # Git
 Git is a distributed version control system (VCS) designed to manage changes in source code during software development. It allows multiple developers to work on the same codebase simultaneously while keeping track of changes, facilitating collaboration, and providing a history of the project's evolution.
 
-To make the learning fun I have included link for Git visualiser where one can visualise how git works. Feel free to make use of it. 
-`https://git-school.github.io/visualizing-git/`
+To make the learning fun I have included link for Git visualiser where one can visualise how git works. Feel free to make use of it: 
+
+<a href="https://git-school.github.io/visualizing-git/">Visualise git</a>
 
 ## How git is organized
 
