@@ -54,3 +54,9 @@ You can push your changes to remote repository using the command:
 
 **origin:** Refers to the remote repository.
 **branch:** Refers to the branch to which you want to push your changes
+
+## Pulling changes from remote repository to the local repository
+
+You can pull changes from the remote repository using the command:
+
+`git pull`
