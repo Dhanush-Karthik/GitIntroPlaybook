@@ -43,7 +43,7 @@ The `git add` command moves changes from the working directory to the Git stagin
 
 `git add .` adds all the changes to the staging area.
 ![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3Adbf0c59f-848d-4814-bfd5-6b190a092963/03.svg?cdnVersion%3D1162)
-### Commit changes to git
+## Commit changes to git
 
 You can commit the changes to your local repository using the command:
 
@@ -53,7 +53,7 @@ The git commit takes the staged snapshot and commits it to the project history.
 
 Up until this point, everything you have done is on your local system and invisible to your Remote repository until you push those changes.
 
-### Pushing your changes to remote repository
+## Pushing your changes to remote repository
 
 You can push your changes to remote repository using the command:
 
@@ -68,7 +68,7 @@ You can pull changes from the remote repository using the command:
 
 `git pull`
 
-### Stash your changes 
+## Stash your changes 
 
 On trying to update the changes made on the remote repository in your local you might get an error
 
@@ -84,7 +84,7 @@ To stash your changes use the command:
 
 Stashing allows you to save your changes in a hidden area and revert your working directory to a clean state.
 
-### Merge changes to your working repository
+## Merge changes to your working repository
 
 To merge the changes made on your remote repository to your local repository you can use the command:
 
