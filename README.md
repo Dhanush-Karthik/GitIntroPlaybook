@@ -99,7 +99,9 @@ The `git add` command moves changes from the working directory to the Git stagin
 
 `git add .` adds all the changes to the staging area.
 
-<img src="https://wac-cdn.atlassian.com/dam/jcr%3Adbf0c59f-848d-4814-bfd5-6b190a092963/03.svg?cdnVersion%3D1162" alt="Alt Text" width="300">
+<p align="center">
+    <img src="https://wac-cdn.atlassian.com/dam/jcr%3Adbf0c59f-848d-4814-bfd5-6b190a092963/03.svg?cdnVersion%3D1162" alt="Alt Text" width="500">
+</p>
 
 ## Commit changes to git
 
