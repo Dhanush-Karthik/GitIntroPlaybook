@@ -159,7 +159,7 @@ The git commit takes the staged snapshot and commits it to the project history.
 
 Up until this point, everything you have done is on your local system and invisible to your Remote repository until you push those changes.
 
-You can skip the staging step by adding `-a` to your commit code
+You can skip the staging step by adding `-a` to your commit code. Thiss adds all changes to all files to the staging area.
 
 ```
 git commit -a -m "your message"
