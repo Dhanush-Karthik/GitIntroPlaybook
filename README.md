@@ -90,3 +90,36 @@ To merge the changes made on your remote repository to your local repository you
 
 `git merge`
 
+## Branch your project 
+
+Making changes to your project as seen above is not an efficient way. Updating every thing to the main branch makes difficult to manage and organize the changes. 
+
+In Git, branches are an essential feature that allow you to create separate lines of development within a repository. Each branch represents an independent timeline of changes, making it possible to work on different features, fixes, or experiments without directly affecting the main project until you're ready to merge your changes
+
+### Main branch
+
+When you initialize a Git repository or clone an existing one, there's usually a default branch like master or main that serves as the mainline of development. This is where the stable and production-ready code resides.
+
+### Create a new branch
+
+To start working on a new feature or fixing a bug, you create a new branch. This branch will initially be identical to the branch you're branching from (often the default branch). You can create a new branch using the command:
+
+`git branch branch-name`
+
+This command creates a new branch called as **branch-name** from the default branch.
+
+To see the status of the branches available you can use the command:
+
+`git branch`
+
+It returns the list of all branches available with the active branch in green color.
+
+### Switching between branches
+
+To switch to a different branch, you use the command:
+
+`git checkout branch_name`
+
+In more recent versions of Git, you can use the following command for switching:
+
+`git switch branch_name`
