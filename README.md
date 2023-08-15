@@ -1,6 +1,16 @@
 # Git-Basics
 Basic commands and concepts of Git
 
+## Git Basic flow
+
+The basic Git workflow involves
+1. clone
+2. add
+3. commit
+4. push
+5. pull
+
+Between Remote Repository and your local system/repository.
 ## Clone a remote repository
 
 To clone a remote git repository use the following command:
@@ -60,3 +70,26 @@ You can push your changes to remote repository using the command:
 You can pull changes from the remote repository using the command:
 
 `git pull`
+
+## Stash your changes 
+
+On trying to update the changes made on the remote repository in your local you might get an error
+
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge
+
+Inorder to overcome this error you can either commit your changes or you can stash them
+
+To stash your changes use the command:
+
+`git stash`
+
+Stashing allows you to save your changes in a hidden area and revert your working directory to a clean state.
+
+## Merge changes to your working repository
+
+To merge the changes made on your remote repository to your local repository you can use the command:
+
+`git merge`
+
