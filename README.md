@@ -186,8 +186,16 @@ After Merging your branch your repository looks like:
 
 ### Deleting a branch
 
-Once there is no more use of a branch. it can be deleted by using the command:
+Once there is no more use of a branch. It can be deleted by using the command:
 
 ```
 git branch -d future-plans
+```
+
+### Pushing all the changes to the remote repository
+
+Once all changes are done. The code is pushed to the remote repository using the command:
+
+```
+git push origin main
 ```
