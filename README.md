@@ -172,7 +172,9 @@ It's important to understand that branches are just pointers to commits. When yo
 
 When you initialize a Git repository or clone an existing one, there's usually a default branch like master or main that serves as the mainline of development. This is where the stable and production-ready code resides.
 
-![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A3b5d663b-0b1c-4321-a32c-0708769e8aeb/04%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
+<p align="center">
+    <img src="https://wac-cdn.atlassian.com/dam/jcr%3A3b5d663b-0b1c-4321-a32c-0708769e8aeb/04%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162" alt="Alt Text" width="500">
+</p>
 
 ### Create a new branch
 
@@ -184,7 +186,10 @@ git branch future-plans
 
 This command creates a new branch called as **future-plans** from the default branch.
 
-![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A36506d0e-5e8e-4ef8-82a5-368597c66efd/05%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
+<p align="center">
+    <img src="https://wac-cdn.atlassian.com/dam/jcr%3A36506d0e-5e8e-4ef8-82a5-368597c66efd/05%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162" alt="Alt Text" width="500">
+</p>
+
 
 To see the status of the branches available you can use the command:
 
@@ -218,7 +223,9 @@ git commit -m "changes on sub-branch"
 
 Now your repository looks like this:
 
-![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A5331fdcb-bfcf-435a-be7e-5b21d75a5531/06%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
+<p align="center">
+    <img src="https://wac-cdn.atlassian.com/dam/jcr%3A5331fdcb-bfcf-435a-be7e-5b21d75a5531/06%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162" alt="Alt Text" width="500">
+</p>
 
 ### Merge branches
 
@@ -235,7 +242,9 @@ git merge future-plans
 
 After Merging your branch your repository looks like:
 
-![Alt text](https://wac-cdn.atlassian.com/dam/jcr%3A72ab245a-391a-4aba-b6a5-741a10c2518b/07%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162)
+<p align="center">
+    <img src="https://wac-cdn.atlassian.com/dam/jcr%3A72ab245a-391a-4aba-b6a5-741a10c2518b/07%20Create%20a%20branch%20and%20make%20a%20change.svg?cdnVersion%3D1162" alt="Alt Text" width="500">
+</p>
 
 
 ### Deleting a branch
