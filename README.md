@@ -286,18 +286,20 @@ git push origin main
 The structure of a Git repository includes various components that work together to manage and track changes in your project's files. Here's an overview of the key elements in a Git repository's structure. The three main structure of git are
 
 1. Working directory
-1. Index(Staging Area)
-1. HEAD
+2. Index(Staging Area)
+3. HEAD
+4. Detached Head
 
-1. Working Directory:
+
+### Working Directory:
 
 The working directory is the directory on your local machine where you have all your project files. It's the place where you edit, modify, and create new files as you work on your project. These changes are initially separate from the version control system. When you make changes to files in the working directory, Git doesn't automatically track those changes. Instead, you need to explicitly tell Git which changes to include in the next commit. The working directory is also sometimes referred to as the "working tree."
 
-1. Index (Staging Area):
+### Index (Staging Area):
 
 The index, also known as the staging area, is an intermediate step between the working directory and the repository. It's a place where you assemble and organize changes before you commit them to the version history. When you use the `git add` command, you're actually moving changes from the working directory to the index. This allows you to selectively choose which changes you want to include in your next commit. The index acts as a snapshot of what your next commit will look like. Once you've staged your changes in the index, you can use the `git commit` command to create a new commit that captures those staged changes.
 
-1. HEAD:
+### HEAD:
 
 HEAD is a special pointer/reference in Git that points to the latest commit in the currently checked-out branch.When you commit changes, the branch pointer moves forward to point to the new commit, and HEAD updates to point to the latest commit on that branch. This means that HEAD is always pointing to the tip of the current branch.
 
@@ -306,8 +308,11 @@ HEAD is a special pointer/reference in Git that points to the latest commit in t
 ```
 git checkout <branch-name>
 ```
+<p align="center">
+    <img width="679" alt="Screenshot 2023-08-15 at 6 11 32 PM" src="https://github.com/Dhanush-Karthik/Git-Basics/assets/109062680/24f9044b-fdf1-482f-bf70-88e0b1d21243">
+</p>
 
-1. Detached HEAD:
+### Detached HEAD:
 
 Detached HEAD is a state in Git where the HEAD reference points directly to a specific commit rather than to a named branch. This can happen when you checkout a commit directly using its hash or through other means that don't involve checking out a branch.
 
@@ -317,7 +322,27 @@ git checkout <commit-hash>
 
 One can get the `commit-hash` from the `git log` command.
 
+<p align="center">
+    <img width="679" alt="Screenshot 2023-08-15 at 6 10 50 PM" src="https://github.com/Dhanush-Karthik/Git-Basics/assets/109062680/533451e1-d7d9-4465-b2ee-91b08608690f">
+</p>
 
 When you make changes and commits in a detached HEAD state, those changes are captured just like regular commits. However, because you're not on a named branch, there's no branch reference pointing to these commits, which means they're not as easily accessible or part of the main project timeline. This is why it's important to handle detached HEAD commits properly to avoid losing your work.
 
+To create commits use the command:
+```
+git commit -m "your message"
+```
+
+<p align="center">
+    <img width="679" alt="Screenshot 2023-08-15 at 6 12 12 PM" src="https://github.com/Dhanush-Karthik/Git-Basics/assets/109062680/2bfd3e61-b4b4-40cb-8a93-26e20fa5ed46">
+</p>
+
 To keep track of the commits made on the detached HEAD, a new branch is created using the command `git branch <branch-name>`
+
+```
+git branch detached-branch
+```
+
+<p align="center">
+    <img width="679" alt="Screenshot 2023-08-15 at 6 12 31 PM" src="https://github.com/Dhanush-Karthik/Git-Basics/assets/109062680/2855f7e5-603e-4e9c-b5ec-54e812afef04">
+</p>
