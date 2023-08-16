@@ -5,6 +5,11 @@ These are common Git commands used in various situations:
 
 To get details about all the git commands use `git --help` or `git -h` command.
 
+To get details and options availabele for specific command use command `git <command> --help` or `git <command> -h`.
+
+Example:
+`git init --help`, `git clone --help`
+
 Start a working area (see also: git help tutorial):
 ```
    clone     Clone a repository into a new directory
@@ -45,19 +50,19 @@ Collaborate (see also: git help workflows):
    pull      Fetch from and integrate with another repository or a local branch
    push      Update remote refs along with associated objects
 ```
-### Init
+## Init
 
 | Command | Description |
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
 | `git init --bare` | Initialize a bare repository |
-### Config
+## Config
 
 | Command | Description |
 | ------- | ----------- |
 |`git config --global user.name "<username>"`| Configure the author name |
 |`git config --global user.email <email address>`| Configure the author email address |
-### Clone
+## Clone
 
 | Command | Description |
 | ------- | ----------- |
@@ -65,26 +70,26 @@ Collaborate (see also: git help workflows):
 | `git clone --bare <repo-link>` | Creates a bare clone, which doesn't have a working directory and is used for server-side repositories |
 | `git clone --mirror <repo-link>` | Create a mirrored clone, which is a bare clone that reflects updates pushed to the original repository |
 
-### Status
+## Status
 
 | Command | Description |
 | ------- | ----------- |
 | `git status` | Check status |
-### Add
+## Add
 
 | Command | Description |
 | ------- | ----------- |
 | `git add [file-name.txt]` | Add a file to the staging area |
 | `git add -A` or `git add .` | Add all new and changed files to the staging area |
 
-### Remove
+## Remove
 
 | Command | Description |
 | ------- | ----------- |
 | `git rm [file-name.txt]` | Remove a file (or folder) |
 | `git rm -r [file-name.txt]` | Remove a file (or folder) recursively|
 
-### Commit
+## Commit
 
 | Command | Description |
 | ------- | ----------- |
@@ -92,7 +97,7 @@ Collaborate (see also: git help workflows):
 | `git commit -a -m "[commit message]"` | Add all changes to stage and commit changes |
 
 
-### Branch
+## Branch
 
 | Command | Description |
 | ------- | ----------- |
@@ -103,7 +108,7 @@ Collaborate (see also: git help workflows):
 | `git branch -m [old branch name] [new branch name]` | Rename a local branch |
 
 
-### Checkout
+## Checkout
 
 | Command | Description |
 | ------- | ----------- |
@@ -113,19 +118,19 @@ Collaborate (see also: git help workflows):
 | `git checkout -` | Switch to the branch last checked out |
 | `git checkout -- [file-name.txt]` | Discard changes to a file |
 
-### Merge
+## Merge
 | Command | Description |
 | ------- | ----------- |
 | `git merge [branch name]` | Merge a branch into the active branch |
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
 
-### Stash
+## Stash
 | Command | Description |
 | ------- | ----------- |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
 
-### Push
+## Push
 
 | Command | Description |
 | ------- | ----------- |
@@ -134,21 +139,21 @@ Collaborate (see also: git help workflows):
 | `git push` | Push changes to remote repository (remembered branch) |
 | `git push origin --delete [branch name]` | Delete a remote branch |
 
-### Pull
+## Pull
 
 | Command | Description |
 | ------- | ----------- |
 | `git pull` | Update local repository to the newest commit |
 | `git pull origin [branch name]` | Pull changes from remote repository |
 
-### Remote
+## Remote
 
 | Command | Description |
 | ------- | ----------- |
 | `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote repository |
 | `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
 
-### Inspection & Comparison
+## Inspection & Comparison
 
 | Command | Description |
 | ------- | ----------- |
