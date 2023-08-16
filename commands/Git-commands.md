@@ -7,7 +7,12 @@ Git Commands
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
 
+### Config
 
+| Command | Description |
+| ------- | ----------- |
+|`git config --global user.name "<username>"`| Configure the author name |
+|`git config --global user.email <email address>`| Configure the author email address |
 ### Clone
 
 | Command | Description |
