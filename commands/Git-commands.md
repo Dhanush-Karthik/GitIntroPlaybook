@@ -106,7 +106,7 @@ Collaborate (see also: git help workflows):
 | `git branch [branch name]` | Create a new branch |
 | `git branch -d [branch name]` | Delete a branch |
 | `git branch -m [old branch name] [new branch name]` | Rename a local branch |
-
+| `git push --delete origin [branch name]` | Delete a branch on remote repository |
 
 ## Checkout
 
@@ -137,7 +137,7 @@ Collaborate (see also: git help workflows):
 | `git push` | Push changes to remote repository (remembered branch) |
 | `git push origin [branch name]` | Push a branch to your remote repository |
 | `git push -u origin [branch name]` | Push changes to remote repository (and remember the branch) |
-| `git push origin --delete [branch name]` | Delete a remote branch |
+| `git push --delete origin [branch name]` | Delete a branch on remote repository |
 
 ## Pull
 
