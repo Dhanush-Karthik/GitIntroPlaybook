@@ -129,6 +129,16 @@ Collaborate (see also: git help workflows):
 | ------- | ----------- |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
+| `git stash list` | Lists all the stashes made |
+| `git stash show` | See the changes in the file before stash and after stash |
+| `git stash apply` | Apply latest stash made |
+| `git stash pop` | Apply latest stash made and removes from the stash |
+| `git stash apply stash@{i}` | Apply particular stash made (i stands for index) |
+| `git stash save <stashing message>` | Saving Stashes with the message |
+| `git stash drop` | Deletes the recent stash made |
+| `git stash drop stash@{i}` | Deletes the specific stash made (i stands for index) |
+| `git stash clear` | Deletes the all the stash made |
+| `git stash branch <branch_name>` | Creates a new branch and transfer the stashed work on that |
 
 ## Push
 
