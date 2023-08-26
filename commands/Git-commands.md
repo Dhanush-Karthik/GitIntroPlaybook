@@ -3,9 +3,9 @@ Git Commands
 
 These are common Git commands used in various situations:
 
-To get details about all the git commands use `git --help` or `git -h` command.
+To get details about all the git commands use the `git --help` or `git -h` command.
 
-To get details and options availabele for specific command use command `git <command> --help` or `git <command> -h`.
+To get details and options available for specific commands use, command `git <command> --help` or `git <command> -h`.
 
 Example:
 `git init --help`, `git clone --help`
@@ -16,7 +16,7 @@ Start a working area (see also: git help tutorial):
    init      Create an empty Git repository or reinitialize an existing one
 ```
 
-Work on the current change (see also: git help everyday):
+Work on the current change (see also: git help every day):
 ```
    add       Add file contents to the index
    mv        Move or rename a file, a directory, or a symlink
@@ -41,7 +41,7 @@ Grow, mark and tweak your common history:
    rebase    Reapply commits on top of another base tip
    reset     Reset current HEAD to the specified state
    switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
+   tag       Create, list, delete, or verify a tag object signed with GPG
 ```
 
 Collaborate (see also: git help workflows):
@@ -50,6 +50,12 @@ Collaborate (see also: git help workflows):
    pull      Fetch from and integrate with another repository or a local branch
    push      Update remote refs along with associated objects
 ```
+## Ignoring Files
+
+   Create a `.gitignore` file in your repository to specify files or patterns to ignore.
+
+
+  
 ## Init
 
 | Command | Description |
@@ -132,13 +138,13 @@ Collaborate (see also: git help workflows):
 | `git stash list` | Lists all the stashes made |
 | `git stash show` | See the changes in the file before stash and after stash |
 | `git stash apply` | Apply latest stash made |
-| `git stash pop` | Apply latest stash made and removes from the stash |
+| `git stash pop` | Apply the latest stash made and removes from the stash |
 | `git stash apply stash@{i}` | Apply particular stash made (i stands for index) |
 | `git stash save <stashing message>` | Saving Stashes with the message |
 | `git stash drop` | Deletes the recent stash made |
 | `git stash drop stash@{i}` | Deletes the specific stash made (i stands for index) |
 | `git stash clear` | Deletes the all the stash made |
-| `git stash branch <branch_name>` | Creates a new branch and transfer the stashed work on that |
+| `git stash branch <branch_name>` | Creates a new branch and transfers the stashed work on that |
 
 ## Push
 
@@ -171,3 +177,11 @@ Collaborate (see also: git help workflows):
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+
+## Undoing Changes
+
+| Command | Description |
+| ------- | ----------- |
+|`git restore <file>`| Discard changes in a file (unstaged). |
+|`git reset --hard <commit_hash>` | Reset your working directory to a specific commit. |
+|`git revert <commit_hash>` | Create a new commit that undoes changes from a specific commit. |
