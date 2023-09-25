@@ -185,3 +185,4 @@ Collaborate (see also: git help workflows):
 |`git restore <file>`| Discard changes in a file (unstaged). |
 |`git reset --hard <commit_hash>` | Reset your working directory to a specific commit. |
 |`git revert <commit_hash>` | Create a new commit that undoes changes from a specific commit. |
+|`git revert -m 1 <commit_hash>` | Create a new commit that undoes changes from a specific merge commit. |
